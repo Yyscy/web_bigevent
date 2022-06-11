@@ -15,14 +15,13 @@ $(function () {
             success: res => {
                 const { status, message, data } = res;
                 if (status !== 0) return layer.msg(message);
-                console.log(data);
                 form.val('formUserInfo', data);
             }
         })
     };
-    
+
     initUserInfo();
-    
+
     $("#btnReset").click((e) => {
         e.preventDefault();
         initUserInfo();

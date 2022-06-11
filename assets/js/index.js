@@ -9,7 +9,7 @@ var getUserInfo = () => {
         success: res => {
             const { status, message, data } = res;
             if (status !== 0) return layer.msg(message);
-            layer.msg("获取用户信息成功！");
+            // layer.msg("获取用户信息成功！");
             renderAvatar(data)
         }
     })
