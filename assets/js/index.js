@@ -2,7 +2,7 @@ $(function () {
     getUserInfo();
 })
 // 获取用户信息
-const getUserInfo = () => {
+var getUserInfo = () => {
     $.ajax({
         type: "GET",
         url: "/my/userinfo",
@@ -15,7 +15,7 @@ const getUserInfo = () => {
     })
 };
 // 渲染用户头像和名称
-const renderAvatar = (user) => {
+var renderAvatar = (user) => {
     let username = user.nickname || user.username;
     // 替换文本
     $("#welcome").html(`欢迎${username}`)
