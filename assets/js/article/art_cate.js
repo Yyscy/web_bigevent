@@ -63,7 +63,7 @@ $(function () {
     // 更新文章分类
     $("body").on('submit', "#form-edit", function (e) {
         e.preventDefault();
-        console.log($(this).serialize());
+        // console.log($(this).serialize());
         $.ajax({
             method: "POST",
             url: "/my/article/updatecate",

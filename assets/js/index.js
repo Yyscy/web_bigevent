@@ -43,3 +43,10 @@ $("#btnLogout").click(() => {
         }
     );
 })
+
+function cactcm() {
+
+    //     $('#change').addClass('layui-this').next().removeClass('layui-this')
+
+    $('#change').addClass('layui-this').siblings().removeClass('layui-this')
+}
